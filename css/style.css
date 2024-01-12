@@ -1,7 +1,8 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box; }
+  box-sizing: border-box; 
+}
 
 html {
   font-family: system-ui, sans-serif;
@@ -33,50 +34,64 @@ body {
 
 .header {
   height: 100vh;
-  background-image: url(../img/docs.jpg);
+  max-height: 720px;
+  background: linear-gradient(90deg, rgba(0,0,0,.9) 0%, rgba(0,0,0,0.5) 100%), url(../img/docs.jpg);
   background-size: cover;
-}
-
-.header-overlay {
-  background-color: transparent;
-  background-image: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5) 100%);
-  opacity: 0.9;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  position: absolute;
 }
 
 .header-contentWrapper {
   display: flex;
   align-items: center;
-  justify-content: right;
-  height: 100vh;
+  justify-content: center;
+  height: 100%;
+  padding: 0 8rem;
 }
 
 .header-content {
   position: relative;
   z-index: 100;
-  width: 50%;
-  padding-right: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .header-content {
+    width: 100%;
+  }
+  
+  .header-contentWrapper {
+    padding: 0 2rem;
+  }
+  
+  html {
+    font-size: 14px;
+  }
+  
+  .header {
+    background: linear-gradient(180deg, rgba(0,0,0,.8) 100%, rgba(0,0,0,0.8) 100%), url(../img/docs.jpg);
+    background-size: cover;
+  }
 }
 
 .header-heading {
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: #ffffff;
+  margin-bottom: 1rem;
 }
 
 .header-description {
   font-size: 1.25rem;
   color: #FFFFFFD4;
+  margin-bottom: 0;
 }
 
 .header-linkList {
   list-style-type: none;
   display: flex;
   padding: 0;
-  margin: 0;
+  margin: 2rem 0 0 0;
 }
 
 .header-linkWrap {
