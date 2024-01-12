@@ -56,6 +56,12 @@ body {
   text-align: center;
 }
 
+.header-heading {
+  font-size: 3rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
 @media (max-width: 800px) {
   .header-content {
     width: 100%;
@@ -73,12 +79,10 @@ body {
     background: linear-gradient(180deg, rgba(0,0,0,.8) 100%, rgba(0,0,0,0.8) 100%), url(../img/docs.jpg);
     background-size: cover;
   }
-}
-
-.header-heading {
-  font-size: 3rem;
-  color: #ffffff;
-  margin-bottom: 1rem;
+  
+  .header-heading {
+    font-size: 2.5rem;
+  }
 }
 
 .header-description {
@@ -129,10 +133,17 @@ body {
   padding: 4rem 8rem;
 }
 
+@media (max-width: 800px) {
+  .about {
+    padding: 2rem;
+  }
+}
+
 .about-header {
   color: #001845;
   margin-bottom: 2rem;
   font-size: 2rem;
+  text-align: center;
 }
 
 .about-bio {
@@ -187,10 +198,49 @@ body {
   height: 400px;
 }
 
+@media (max-width: 1100px) {
+  .about-image {
+    display: none;
+  }
+  
+  .about-bio {
+    width: 50%;
+  }
+  
+  .about-principles {
+    width: 50%;
+  }
+}
+
+@media (max-width: 540px) {
+  .about-layout {
+    flex-direction: column;
+  }
+  
+  .about-bio {
+    width: 100%;
+  }
+  
+  .about-principles {
+    width: 100%;
+  }
+  
+  .about-principles ul {
+    padding-left: 0;
+    margin-top: 2rem;
+  }
+}
+
 /* Pricing */
 
 .pricing {
   padding: 4rem 8rem;
+}
+
+@media (max-width: 800px) {
+  .pricing {
+    padding: 2rem;
+  }
 }
 
 .pricing-header {
@@ -210,6 +260,21 @@ body {
   padding: 2rem;
   box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.07);
   border-top: 4px solid #0466C8;
+}
+
+@media (max-width: 1000px) {
+  .pricing-layout {
+    flex-direction: column;
+  }
+  
+  .pricingItem {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  
+  .pricingItem:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .pricingItem-heading {
@@ -235,14 +300,22 @@ body {
   background-color: #001845;
 }
 
+@media (max-width: 800px) {
+  .contacts {
+    padding: 2rem;
+  }
+}
+
 .contacts-heading {
   color: white;
   font-size: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
 .contacts-description {
   color: #FFFFFFD4;
+  text-align: center;
 }
 
 .contacts-link {
