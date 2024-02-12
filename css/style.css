@@ -39,6 +39,13 @@ body {
   background-size: cover;
 }
 
+@media (max-height: 500px) {
+  .header {
+    height: auto;
+    padding: 4rem 0;
+  }
+}
+
 .header-contentWrapper {
   display: flex;
   align-items: center;
