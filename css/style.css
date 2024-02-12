@@ -34,7 +34,7 @@ body {
 
 .header {
   height: 100vh;
-  max-height: 720px;
+  max-height: 900px;
   background: linear-gradient(90deg, rgba(0,0,0,.9) 0%, rgba(0,0,0,0.5) 100%), url(../img/docs.jpg);
   background-size: cover;
 }
@@ -76,7 +76,7 @@ body {
   }
   
   .header {
-    background: linear-gradient(180deg, rgba(0,0,0,.8) 100%, rgba(0,0,0,0.8) 100%), url(../img/docs.jpg);
+    background: linear-gradient(180deg, rgba(0,0,0,.7) 100%, rgba(0,0,0,0.7) 100%), url(../img/docs.jpg);
     background-size: cover;
   }
   
@@ -124,6 +124,24 @@ body {
 
 .telegram {
   background-image: url(../img/telegram-icon.svg);
+}
+
+.header-language {
+  color: white;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 1.5rem;
+}
+
+.header-language span {
+  margin-left: .5rem;
+}
+
+@media (min-width: 801px) {
+  .header-language {
+    right: 2rem;
+  }
 }
 
 /* About Section */
