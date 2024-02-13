@@ -177,7 +177,7 @@ body {
   border-color: #DADADA;
   padding: 2rem;
   background-color: white;
-  width: 35%;
+  width: 50%;
 }
 
 .about-bio h3 {
@@ -186,12 +186,13 @@ body {
 }
 
 .about-principles {
-  width: 45%;
+  width: 50%;
 }
 
 .about-principles ul {
   list-style-type: none;
   margin: 0;
+  padding: 0;
 }
 
 .about-principles ul li {
@@ -217,17 +218,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.about-image {
-  height: 400px;
+  column-gap: 48px;
 }
 
 @media (max-width: 1100px) {
-  .about-image {
-    display: none;
-  }
-  
   .about-bio {
     width: 50%;
   }
@@ -277,11 +271,12 @@ body {
 
 .pricing-layout {
   display: flex;
-  justify-content: space-between
+  justify-content: space-between;
+  column-gap: 48px;
 }
 
 .pricingItem {
-  width: 30%;
+  flex: 1 1 0px;
   padding: 2rem;
   box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.07);
   border-top: 4px solid #0466C8;
