@@ -35,7 +35,7 @@ body {
 .header {
   height: 100vh;
   max-height: 900px;
-  background: linear-gradient(90deg, rgba(0,0,0,.9) 0%, rgba(0,0,0,0.5) 100%), url(../img/docs.jpg);
+  background-image: url(../img/background.png);
   background-size: cover;
 }
 
@@ -80,11 +80,6 @@ body {
   
   html {
     font-size: 14px;
-  }
-  
-  .header {
-    background: linear-gradient(180deg, rgba(0,0,0,.7) 100%, rgba(0,0,0,0.7) 100%), url(../img/docs.jpg);
-    background-size: cover;
   }
   
   .header-heading {
