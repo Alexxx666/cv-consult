@@ -39,6 +39,12 @@ body {
   background-size: cover;
 }
 
+@media (max-width: 500px) {
+  .header {
+    background-image: url(../img/background-small.png);
+  }
+}
+
 @media (max-height: 500px) {
   .header {
     height: auto;
@@ -91,6 +97,12 @@ body {
   font-size: 1.25rem;
   color: #FFFFFFD4;
   margin-bottom: 0;
+}
+
+@media (max-width: 500px) {
+  .header-description {
+    margin-bottom: 1rem;
+  }
 }
 
 .header-linkList {
@@ -203,10 +215,23 @@ body {
 .about-principles h3 {
   color: #001845;
   margin-bottom: .5rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .about-principles p {
   margin: 0;
+}
+
+.principle-icon {
+  display: block;
+  height: 28px;
+}
+
+.principle-icon svg {
+  width: 28px;
+  height: 28px;
 }
 
 .about-layout {
